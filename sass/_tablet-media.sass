@@ -1,0 +1,156 @@
+@media (max-width: 991px)
+ .hidden-mobile
+ 	display: none
+ .mobile-stong
+ 	font-weight: 900
+ .button
+ 	font-size: 1.4rem*1.7
+		&__small
+			font-size: 1.3rem
+	.header
+		&__logo
+			background:  url(../img/header/logo.png) center no-repeat
+			// width: 30px
+			// height: 30px
+		&-nav
+			&__item
+				a
+					font-size: 0.8rem
+		&-contacts
+			&__phone
+				&s
+					flex-direction: column
+				margin-right: 0
+				/* полосочка между телефонами */
+				&:first-child
+					border: none
+	.call-back-btn
+		padding: 1rem 0.5rem 1rem 1.2rem
+ .main
+ 	&__title
+ 		text-align: center
+ 		color: $orange
+ 	&__subtitle
+ 		text-align: center
+ 	&-form
+ 		padding: 0
+ 		line-height: 1.8rem
+ 		background-color: transparent
+ 		text-align: center
+ .form
+ 	&-title
+	 	text-align: center
+	 	padding: 0
+		&__input
+			padding: 2rem*1.3
+	 	margin-bottom: 13px
+			width: 67%
+		&__small
+			margin-top: 16px
+			font-size: 1.4em *1.3
+	.popup
+		top: 95px
+		width: 95%
+		border: 1px solid $orange
+		&__close
+			right: -1px
+			top: -40px
+	.button-big
+		vertical-align: top
+
+	.numbers
+		&-block
+			margin-bottom: 2rem
+			width: 45%
+
+	.features
+		&-block
+			flex-basis: 45%
+
+	.prod
+		&-block
+			margin-bottom: 2rem
+		&__img
+			height: 180px
+			max-width: 320px
+			img
+				max-width: 100%
+ .prod-self-align__img
+		margin-bottom: 23px
+
+	.cta-block
+		&__content
+			font-size: 2rem
+			span
+				font-size: 1.8rem
+		&__text
+			font-size: 1.8rem
+		&__small
+			font-size: 1.5rem
+		&__btn
+			font-size: 1.8rem
+
+	// .clients
+	// 	&-block
+	// 		&__item
+	// 			flex-basis: 30%
+	.clients-block
+		&__item
+			display: none
+		&__itemMobile
+			display: flex
+   margin-bottom: 7px
+   justify-content: center
+   align-items: center
+   flex-basis: 49%
+   text-align: center
+   width: 150px
+   height: 87px
+   line-height: 130px
+   border: 0.1rem solid rgba(0, 0, 0, 0.1)
+			img
+				max-width: 100%
+
+	.production
+		&-slider
+			&_top
+				height: 270px
+			&_bottom
+				height: 55px
+		&-text
+			&__title
+				font-size: 2.2rem
+			&__descr
+				font-size: 1.4rem
+				line-height: 2rem
+
+	.contacts
+		&-block
+			&__title
+				font-size: 1.4rem
+			&__descr
+				font-size: 1.2rem
+			&__button
+				font-size: 1.38rem
+			&__tel
+				&::before
+					content: ' '
+					display: block
+					position: absolute
+					left: 33px
+					top: 161px
+					width: 15px
+					height: 22px
+					background-image: url(../img/map/tel-icon.png)
+			&__email
+				&::before
+					content: ' '
+					display: block
+					position: absolute
+					left: 33px
+					top: 305px
+					width: 20px
+					height: 14px
+					background-image: url(../img/map/email-icon.png)
+	
+   

@@ -1,0 +1,249 @@
+@media (max-width: 767px)
+	.header
+		&__logo
+			margin-left: 10%
+	.production
+		&-slider
+			&_top
+				width: 100%
+				height: 380px
+				img
+					height: 380px
+			&_bottom
+				display: none
+		&-text
+			&__title
+				margin: 0
+				width: 100%
+				padding: 20px 0
+				text-align: center
+				font-size: 3.333rem
+			&__descr
+				font-size: 2.333rem
+				line-height: 3rem
+				text-align: center
+			&__descrText
+				display: block
+				margin-bottom: 15px
+ .slider-arrow
+		top: 50%
+		transform: translateY(-50%)
+		position: absolute
+		height: 78px
+		width: 22px
+		z-index: 7
+		border: 1px solid $orange
+		&_right
+			background: $orange  url(../img/arrow-right_active.png) center no-repeat
+			right: 0
+		&_left
+			background: $orange  url(../img/arrow-left_active.png) center no-repeat
+			left: 0
+ 
+	.feedback
+		&-slider
+			width: 300px
+			margin: 0 auto
+			padding: 2rem
+			&__item 
+				padding: .1rem
+				img
+					width: 100%
+ .menu-wrap
+		display: block
+	.menu
+		&-link
+			width: 4rem
+			height: 4rem
+			top: 2.5rem
+			left: 0
+ .header
+		display: none
+ .features-block
+		flex-basis: 49%
+		min-height: 113px
+		max-height: 170px
+	
+ .contacts
+		&-block
+			position: static
+			padding: 0
+			padding-top: 36px
+			padding-bottom: 30px
+			text-align: center
+			&__title
+				font-size: 1.8rem
+			&__descr
+				font-size: 1.4rem
+			&__button
+				font-size: 1.4rem
+			&__address
+				&::before
+					display: none
+				&::before
+					content: 'Контакты'
+					display: block
+					top: -19px
+					margin-top: 36px
+					min-width: 116px
+					min-height: 16px
+					left: 50%
+					margin-left: -58px
+					text-transform: uppercase
+					color: $grey
+					font-size: 2.2rem
+					font-weight: 700
+					background-image: none
+			&__tel
+				&::before
+					display: none
+			&__email
+				&::before
+					display: none
+	.self-margin-top
+		margin-top: 19px
+	.footer__text
+		font-size: 1.1rem
+
+@media (max-width: 576px) 
+	html
+  font-size: 6px
+ .hidden-mobile
+ 	display: none
+ .mobile-stong
+ 	font-weight: 900
+ .button
+ 	font-size: 1.4rem*1.7
+	.header
+		display: none
+		&__logo
+			background: $orange url(../img/header/mobile-logo.png) center no-repeat
+			width: 30px
+			height: 30px
+			margin-left: 60%
+		&-contacts
+			&__phone
+				&s
+					flex-direction: column
+				margin-right: 0
+				/* полосочка между телефонами */
+				&:first-child
+					border: none
+	.call-back-btn
+		padding: 1rem 0.5rem 1rem 1.2rem
+ .main
+ 	&__title
+ 		text-align: center
+ 		color: $orange
+ 	&__subtitle
+ 		text-align: center
+ 	&-form
+ 		padding: 0
+ 		line-height: 1.8rem
+ 		background-color: transparent
+ 		text-align: center
+ .form
+ 	&-title
+	 	text-align: center
+	 	padding: 0
+		&__input
+			padding: 2rem*1.3
+	 	margin-bottom: 13px
+	 	width: 90%
+		&__small
+			margin-top: 16px
+			font-size: 1.4em *1.3
+	.popup
+		top: 95px
+		width: 95%
+		border: 1px solid $orange
+		&__close
+			right: -1px
+			top: -40px
+
+	.numbers
+		&-block
+			width: 90%
+			&__title
+				font-size: 5rem
+			&__text
+				font-size: 2.3rem
+	.features-block
+		flex-basis: 100%
+		&__title	
+			font-size: 2.5rem	
+		&__descr	
+			font-size: 2.3rem
+			line-height: 3rem
+
+	.button__small
+		font-size: 2rem
+
+	.cta-block__small
+		font-size: 2.167rem
+	.cta-block__input
+		min-width: 280px
+
+	.clients-block
+		&__item
+			display: none
+		&__itemMobile
+			display: flex
+   margin-bottom: 7px
+   justify-content: center
+   align-items: center
+   flex-basis: 49%
+   text-align: center
+   width: 150px
+   height: 87px
+   line-height: 130px
+   border: 0.1rem solid rgba(0, 0, 0, 0.1)
+			img
+				max-width: 100%
+	.menu
+		&-link
+			width: 6rem
+			height: 6rem
+			top: 1.5rem
+			left: 1.5rem
+
+	.contacts
+		&-block
+			position: static
+			padding: 0
+			padding-top: 36px
+			padding-bottom: 30px
+			text-align: center
+			&__title
+				font-size: 3rem
+			&__descr
+				font-size: 2.333rem
+			&__button
+				font-size: 2.333rem
+			&__address
+				&::before
+					display: none
+				&::before
+					content: 'Контакты'
+					display: block
+					top: -19px
+					margin-top: 36px
+					// margin-bottom: 19px
+					min-width: 116px
+					min-height: 16px
+					left: 50%
+					margin-left: -58px
+					text-transform: uppercase
+					color: $grey
+					font-size: 3.667rem
+					font-weight: 700
+					background-image: none
+			&__tel
+				&::before
+					display: none
+			&__email
+				&::before
+					display: none
+	.self-margin-top
+		margin-top: 19px
+

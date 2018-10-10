@@ -1,0 +1,57 @@
+.contacts
+ position: relative
+ color: $grey
+ &-block
+  position: absolute
+  top: 15%
+  left: 10%
+  padding-top: 33px
+  padding-bottom: 39px
+  padding-right: 40px
+  padding-left: 62px
+  z-index: 8
+  background-color: #fff
+  &__title
+   margin-bottom: 6px
+   font-size: 1.8rem
+   font-weight: 700
+  &__descr
+   margin-bottom: 13px
+   font-size: 1.6rem
+   font-weight: 300
+   line-height: 1.8rem
+  &__address
+   margin-bottom: 31px
+   &::before
+    content: ' '
+    display: block
+    position: absolute
+    left: 33px
+    top: 34px
+    width: 17px
+    height: 25px
+    background-image: url(../img/map/map-icon.png)
+  &__button
+   margin-bottom: 25px
+  &__tel
+   &::before
+    content: ' '
+    display: block
+    position: absolute
+    left: 33px
+    top: 172px
+    width: 15px
+    height: 22px
+    background-image: url(../img/map/tel-icon.png)
+  &__email
+   &::before
+    content: ' '
+    display: block
+    position: absolute
+    left: 33px
+    top: 322px
+    width: 20px
+    height: 14px
+    background-image: url(../img/map/email-icon.png)
+.tel__descr
+ margin-bottom: 8px

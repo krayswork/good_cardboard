@@ -1,0 +1,160 @@
+.main
+	/* position: relative - что бы работало затемнение. Делает элемент жоским. */
+	position: relative
+	padding-top: 4.1rem
+	padding-bottom: 5.4rem
+	background: #263030 url(../img/main/main-bg.jpg) center no-repeat
+	background-size: cover
+	color: $white
+	z-index: 1
+	/* затемнение фона на главном экране (где коробки) */
+	&::before
+		content: ''
+		display: block
+		/* position: absolute - что бы работало затемнение */
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0, 0, 0.6)
+		z-index: 0
+	&-img
+		margin-left: -10.5rem
+		position: relative
+		/* белый круг за коробками */
+		&::before
+			content: ''
+			position: absolute
+			width: 39rem
+			height: 39rem
+			border: 1px solid $white
+			border-radius: 50%
+			left: 50%
+			top: 17px
+			margin-left: -140px
+			z-index: -1
+	&__title
+		// margin-top: -10px
+		margin-bottom: 1rem
+		font-size: 4.1rem
+		font-weight: 700
+		line-height: 4.2rem
+	&__subtitle
+		margin-bottom: 2.4rem
+		display: block
+		font-size: 2.8rem
+		font-weight: 400
+ &-form
+ 	padding: 2.7rem 3rem
+ 	background-color: rgba(255, 255, 255, 0.2)
+.form
+	margin-bottom: 1.2rem
+	&__input
+		margin-right: 1rem
+		padding: 2rem
+		vertical-align: middle
+		min-width: 31.1rem
+		border-radius: 5px
+		border: none
+	&-title
+		margin-bottom: 2rem
+		padding-right: 4rem
+		font-size: 2rem
+		font-weight: 300
+		line-height: 3rem
+		&_strong
+			display: block
+			font-weight: 700
+			text-transform: uppercase
+	&__small
+		font-size: 1.4rem
+		font-weight: 300
+
+/* Кнопка меню для маленьких экранов */
+.menu-wrap
+	display: none
+	// visibility: hidden;
+
+.menu
+	&-link
+		z-index: 9
+		display: block
+		width: 5rem
+		height: 5rem
+		background-color: #fff
+		border-radius: 50%
+		// box-shadow: 1px 1px 10px rgba(0,0,0,.4)
+		position: fixed
+		top: 2rem
+		left: 2rem
+		span, span:before, span:after
+			display: block
+			height: 3px
+			width: 23px
+			position: absolute
+			left: 50%
+			margin-left: -11.5px
+			top: 50%
+			margin-top: -1px
+			background-color: #333
+		
+		span:before
+			transition: all 0.2s
+			content: ''
+			margin-top: -8px
+		
+		span:after
+			transition: all 0.2s
+			content: ''
+			margin-top: 4px
+		
+		&_active span
+			background-color: transparent
+			z-index: 200
+			&:before
+				transform: rotate(135deg)
+				margin-top: 0
+			
+			&:after
+				transform: rotate(-135deg)
+				margin-top: 0
+			
+		
+	
+	background-color: rgba(0, 0, 0, .95)
+	position: fixed
+	width: 100vw
+	height: 100vh
+	z-index: 8
+	display: flex
+	justify-content: center
+	align-items: center
+	transition: all 0.5s
+	left: -100vw
+	&_active
+		left: 0
+	
+	ul
+		list-style: none
+		padding: 0
+		text-align: center
+	li
+		width: 100vw
+	
+	a
+		display: block
+		width: 100%
+		line-height: 3
+		font-size: 2rem
+		letter-spacing: 5px
+		color: #fff
+		transition: all 0.2s
+		text-decoration: none
+		&:active
+			display: block
+			width: 100vw
+			background-color: rgba(255,255,255,.4)
+			text-decoration: none
+
+/* /Кноапка меню для маленьких экранов */

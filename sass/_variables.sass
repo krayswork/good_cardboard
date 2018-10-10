@@ -1,0 +1,60 @@
+$white:	#fff	
+$grey:	#373737
+$grey-dark:	#313131
+$black: #000000
+$orange: #ff9d00
+$darken-white: #f4f4f4
+
+.button
+	padding: 1.2rem 2.2rem
+	background-color: $orange
+	border: none
+	border-radius: 5px
+	color: $white
+	font-size: 1.4rem
+	// &:hover
+	// 	background-color: lighten($orange, 10)
+	// 	cursor: pointer
+	img
+		margin-right: 7px
+		vertical-align: middle
+	&-big
+		padding: 20px
+		vertical-align: middle
+	&-o
+		background-color: transparent
+		color: rgba($grey, 0.5)
+		border: 1px solid rgba($grey, 0.5)
+		// &:hover	
+		// 	color: $orange
+		// 	background-color: transparent
+		// 	border: 1px solid $orange
+
+.section-title
+	margin-bottom: 3.9rem
+	color: $grey-dark
+	font-size: 2.7rem
+	font-weight: 700
+	text-transform: uppercase
+	text-align: center
+	&::after
+		content: ''
+		margin-top: 12px
+		display: block
+		height: 6px
+		text-align: center
+		background:  url(../img/line.png) center no-repeat
+
+.slider-arrow
+	position: absolute
+	height: 100%
+	width: 22px
+	z-index: 7
+	top: 0
+	border: 1px solid $orange
+	&_right
+		background: #fff  url(../img/arrow_right.png) center no-repeat
+		right: 0
+	&_left
+		background: #fff  url(../img/arrow_left.png) center no-repeat
+		left: 0

@@ -1,0 +1,45 @@
+@media (min-width: 992px)
+ .slider-arrow
+  &_right
+   &:hover
+    background: $orange url(../img/arrow-right_active.png) center no-repeat
+    cursor: pointer
+  &_left
+   &:hover
+    background: $orange url(../img/arrow-left_active.png) center no-repeat
+    cursor: pointer
+
+ .feedback
+  &-slider
+   &__arrowLeft
+    &:hover
+     background-color: transparent
+     background: transparent url(../img/feedback/feedback-left-arrow.png) center no-repeat
+   &__arrowRight
+    &:hover
+     background-color: transparent
+     background: transparent url(../img/feedback/feedback-right-arrow.png) center no-repeat
+ .header-nav__item
+  a
+   &:hover
+    color: $orange
+ .header-contacts
+  a
+   &:hover
+    color: $orange
+ .button
+  &:hover
+   background-color: lighten($orange, 10)
+   cursor: pointer
+  &-o
+   &:hover	
+    color: $orange
+    background-color: transparent
+    border: 1px solid $orange
+ .clients
+  &-block
+   &__item
+    &:hover
+     filter: grayscale(0)
+     cursor: pointer
+ 
